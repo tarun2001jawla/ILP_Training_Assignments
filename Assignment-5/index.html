@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <section>
+        <div class="circle" id="circle"></div>
+        <header>
+            <a href="#" ><img src="/media/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>Don't be a clown,<br>be a<span> King</span></h2>
+                <p>Welcome to Burger King, where flavor reigns supreme and satisfaction is always on the menu! Indulge in our mouthwatering burgers crafted with the finest ingredients, savor the crunch of our golden fries, and quench your thirst with our refreshing beverages</p>
+                <a href="#">Learn More </a>
+            </div>
+            <div class="ImageDiv">
+                <img src="/media/Fresh_beef_burger_isolated_-6-removebg-preview.png" alt="Burger" class="BurgerKing">
+            </div>
+        </div>
+       <ul class="burgers">
+        <li class="burger1"><img src="media/burger1.png" onclick="ImageChange('media/burger2.png')"></li>
+        <li class="burger1"><img src="media/burger1.png" onclick="ImageChange('media/burger1.png')" ></li>
+        <li class="burger1"><img src="media/burger1.png" onclick="ImageChange('media/burger1.png')"></li>
+       </ul>
+
+       <ul class="social">
+        <li><a href="#"><img src="media/2227-removebg-preview.png" onclick="ChangeCircleColor('red')"></a></li>
+        <li><a href="#"><img src="media/2227-removebg-preview.png" onclick="ChangeCircleColor('green')"></a></li>
+        <li><a href="#"><img src="media/2227-removebg-preview.png" onclick="ChangeCircleColor('blue')"></a></li>
+       </ul>
+    </section>
+    <script src="index.js"></script>
+    <script>
+        function ImageChange(newImage){
+            document.querySelector('.BurgerKing').src = newImage;
+        }
+
+        function ChangeCircleColor(color){
+            document.getElementById('circle').style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
