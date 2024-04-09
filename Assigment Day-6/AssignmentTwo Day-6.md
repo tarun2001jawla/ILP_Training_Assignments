@@ -1,7 +1,5 @@
 # Assignment-2 Day-6
 
-
-
 ## 1. Why do we use functions in JavaScript?
 
 - Functions are used to perform a specific task.
@@ -10,39 +8,32 @@
 - Functions are used to make code readable.
 - Functions are used to make code maintainable.
 
+## 2. What is Function Invocation?
 
-## 2.What is Function Invocation?
-Function Invocation is used to execute the function code and it is common to use the term “call a function” instead of “invoke a function”. The code inside a function is executed when the function is invoked. 
+Function Invocation is used to execute the function code and it is common to use the term "call a function" instead of "invoke a function". The code inside a function is executed when the function is invoked.
 
-Example :  
-
-
+Example:
+```javascript
 function myFunction() {
   alert("Hello World!");
 }
-
 myFunction();
 
-## 3. Does a function behave like an object in Javascript? Prove it by an example
+## 3.Does a function behave like an object in Javascript? Prove it by an example
+
 In JavaScript, functions are objects, because they can be passed to other functions, returned from functions, and assigned to variables and properties.
 
-Example : 
-// Function declaration.
+Example:
+```
 function displayFavoriteDish() {
   const favDish = 'pizza';
 
   console.log(`My favorite dish is ${favDish}`);
 }
-
-// Let's assign a property.
 displayFavoriteDish.options = ['pizza', 'pasta', 'burger'];
-
-// Let's log the displayFavoriteDish function.
 console.log(displayFavoriteDish);
 
-// Output:
-// { [Function: displayFavoriteDish]
-// options: [ 'pizza', 'pasta', 'burger' ] }
+
 
 ## 4.What are Events in Javascript?
 Events are things that happen in the system you are programming, which the system tells you about so your code can react to them.
@@ -113,11 +104,3 @@ etc are some of common used array methods in Javascript
 Using the `forEach` Method
 Using a for...of 
 etc are some common ways to iterate over a aarray in javscript 
-
-
-
-
-
-
-
-
